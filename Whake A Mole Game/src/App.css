@@ -1,0 +1,94 @@
+.App {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 50px);
+  grid-template-rows: repeat(5, 50px);
+  gap: 10px;
+  justify-content: center;
+  
+}
+
+.cell {
+  width: 60px;
+  height: 60px;
+  background-color: #000;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease;
+  background-size: cover; 
+  background-position: center; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.cell:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
+.cell.active {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHpJmyp-H1vWZBWe8709qcjcdIVoASfr3sYKIAl8BHM6PCFtPaTldGBrktRBATee8WH7U&usqp=CAU'); /* Replace with the mole image path */
+  background-size: 100%; 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #e30202; 
+}
+
+.cell.active:hover {
+  transform: scale(1.2);
+}
+
+.controls {
+
+  display: flex; 
+  justify-content: center; 
+  gap: 15px; 
+}
+
+
+button {
+  padding: 12px 18px;
+  font-size: 18px;
+  margin: 15px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  background-color: #4CAF50;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+  transform: scale(0.98); 
+}
+
+.restart {
+  margin-top: 20px;
+  background-color: #D2042D  ; 
+  color: white;
+  font-size: 18px;
+}
+
+.restart:hover {
+  background-color: #D2042D ;
+}
+
+.restart:active {
+  transform: scale(0.98); 
+}
+
+.restart:focus {
+  outline: none; 
+}
+
